@@ -109,63 +109,15 @@ footer {
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(1px);
 }
-/* Estilos responsivos para telas menores (Telefones) */
-@media (max-width: 768px) {
-    .contactContent {
-      flex-direction: column;
-      align-items: center;
-    }
-    .contactIcon {
-      margin-top: 1rem;
-    }
-    iframe {
-      margin-top: 2rem;
-    }
-    #contato {
-      padding-top: 4rem; 
-    }
-  }
-  
-  /* Estilos responsivos para telas médias (Laptops) */
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .contactContent {
-      flex-direction: column;
-      align-items: center;
-    }
-    .contactIcon {
-      margin-top: 1rem;
-    }
-    iframe {
-      margin-top: 2rem;
-    }
-    #contato {
-      padding-top: 4rem; 
-    }
-  }
- ul.skills{
-    list-style: none;
-    padding-left: 0; 
-    text-align: center;
-  }
-  
-  
-/* Estilos para tornar o mapa responsivo */
+ul.skills{
+  list-style: none;
+  padding-left: 0; 
+  text-align: center;
+}
+
+  /* Estilos para tornar o mapa responsivo */
 iframe {
-    width: 100%;
-    height: 100%;
-  }
-  
-  /* Estilos responsivos para telas menores (Telefones) */
-  @media (max-width: 768px) {
-    iframe {
-      height: 300px; /* Reduz a altura do mapa em telas menores */
-    }
-  }
-  
-  /* Estilos responsivos para telas médias (Laptops) */
-  @media (min-width: 769px) and (max-width: 1024px) {
-    iframe {
-      height: 400px; /* Ajuste a altura do mapa para telas médias */
-    }
-  }
+  width: 100%;
+  height: 100%;
+}
   
