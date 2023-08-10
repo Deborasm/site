@@ -1,0 +1,171 @@
+/* Editando as seções */
+#sobre,
+#skills,
+#portfolio,
+#contato {
+  padding: 4.5rem 0;
+  background-color: rgb(239, 243, 243);
+}
+
+/* Hero Section*/
+.bgimage {
+  height: 100vh;
+  position: relative;
+  background-position: center center; 
+  background: url("images/flores.jpg");
+  background-size: cover;
+  border-radius: 5px;
+
+}
+.heroTitle {
+  font-size: 3.5rem;
+}
+.heroDesc {
+  font-size: 1.5rem;
+}
+.heroText {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(186, 219, 241);
+}
+
+/* Imagem Sobre Mim */
+.aboutImage {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.servicesText.card {
+  height: auto;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  background-color: rgb(186, 219, 241);
+}
+.servicesIcon {
+  height: 24px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.cardTitle {
+  text-align: center;
+}
+.card:hover .servicesIcon {
+  color: rgb(186, 219, 241);
+}
+.servicesText:hover {
+  border: 1px solid rgb(186, 219, 241);
+}
+
+/* Estilização do cabeçalho */
+.navbar {
+  background-color: rgb(186, 219, 241);
+}
+.navbar a {
+  color: rgb(12, 82, 214);
+  padding: 0.5rem;
+}
+.navbar a:hover {
+  background-color: rgb(121, 183, 224);
+  color: black;
+  border-radius: 4px;
+}
+
+/* Aula 3: Icones seção contato */
+.contactIcon {
+  font-size:20px;
+  color: rgb(12, 82, 214); 
+  margin-bottom: 20px;
+ 
+}
+
+/* Footer */
+footer {
+  background-color: rgb(186, 219, 241);
+}
+.footerIcon {
+  font-size: 1.5rem;
+  color: rgb(12, 82, 214);
+}
+.footerIcon:hover {
+  color: rgb(22, 105, 160);
+}
+.footerDev {
+  background-color: rgb(186, 219, 241);
+}
+
+/* Efeito de GlassMorphismo */
+.glass {
+  position: absolute;
+  height: 30%;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(236, 168, 168, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(1px);
+}
+/* Estilos responsivos para telas menores (Telefones) */
+@media (max-width: 768px) {
+    .contactContent {
+      flex-direction: column;
+      align-items: center;
+    }
+    .contactIcon {
+      margin-top: 1rem;
+    }
+    iframe {
+      margin-top: 2rem;
+    }
+    #contato {
+      padding-top: 4rem; 
+    }
+  }
+  
+  /* Estilos responsivos para telas médias (Laptops) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .contactContent {
+      flex-direction: column;
+      align-items: center;
+    }
+    .contactIcon {
+      margin-top: 1rem;
+    }
+    iframe {
+      margin-top: 2rem;
+    }
+    #contato {
+      padding-top: 4rem; 
+    }
+  }
+ ul.skills{
+    list-style: none;
+    padding-left: 0; 
+    text-align: center;
+  }
+  
+  
+/* Estilos para tornar o mapa responsivo */
+iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Estilos responsivos para telas menores (Telefones) */
+  @media (max-width: 768px) {
+    iframe {
+      height: 300px; /* Reduz a altura do mapa em telas menores */
+    }
+  }
+  
+  /* Estilos responsivos para telas médias (Laptops) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    iframe {
+      height: 400px; /* Ajuste a altura do mapa para telas médias */
+    }
+  }
+  
